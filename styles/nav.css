@@ -1,15 +1,20 @@
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     max-width: 1120px;
     margin: auto;
     padding: 3.5rem;
+
+    & #mobile-img{
+        display: none;
+    }  
 }
 
 nav.logomarca img{
     width: 230px;
-    height: 58px;
+    height: 58px;   
 }
 
 #btn{
@@ -21,4 +26,26 @@ nav.logomarca img{
 
     color: var(--text-title);
     font-weight: 600;
+}
+
+#btn:hover{
+    background-color: var(--pink-base);
+}
+
+@media(max-width: 768px){
+
+    nav{
+        padding: 1rem;
+
+        & #mobile-img{
+            display: initial;
+            width: 64px;
+            height: 48px;
+        }
+
+        & #desktop-img{
+            display: none;
+        }
+    }
+
 }
