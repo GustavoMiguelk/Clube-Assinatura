@@ -35,18 +35,20 @@
 }
 
 .msg-div:hover{
-    animation: appear 3s forwards;
+    animation: appear 2s forwards;
 
     & #book{
-        animation: appear 3s 2s forwards;
+        animation: appear 3s 1s forwards;
     }
 
     & #crystal{
-        animation: appear 3s 6s forwards;
+        animation: appear 3s 3s forwards;
+        transform: rotate(-10deg);
     }
 
     & #planchete{
-        animation: appear 3s 4s forwards;
+        animation: appear 3s 2s forwards;
+        transform: rotate(90deg);
     }
 }
 
@@ -78,5 +80,29 @@
     }
     to{
         transform: scale(1.2);
+    }
+}
+
+@media (max-width: 1200px){
+    .msg{
+        width: 768px; 
+    }
+}
+
+@media (max-width: 790px){
+    .msg{
+        width: 375px;
+        padding: 3rem 1rem;
+
+        animation: none;
+
+        & h2{
+            font-size: 1rem;
+        }
+    }
+
+    .img-msg img{
+        width: 40px;
+        height: 40px;
     }
 }
