@@ -1,0 +1,66 @@
+footer{
+    background: url(../assets/images/book-trace-background.png) no-repeat top/cover;
+    height: 415px;
+
+    align-items: center;
+    padding: 10rem 2rem;
+
+    & ul{
+        list-style: none;
+    }
+}
+
+.content-footer{
+
+    display: flex;
+    display: flex;
+
+    justify-content: space-between;
+    margin: auto;
+
+    max-width: 1280px;
+}
+
+.logomarca{
+    & #logo{
+        border-bottom: 2px solid var(--shape-stroke);
+    }
+
+    & ul{
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.info{
+    display: flex;
+    gap: 3rem;
+
+    & li{
+        display: block;
+        padding-block: .5rem;
+        color: var(--text-label);
+
+        & strong{
+            color: white;
+        }
+
+    }
+}
+
+@media (max-width: 768px){
+    .content-footer{
+        display: grid;
+        gap: 1REM;
+
+        justify-content: center;
+    }
+
+    .info{
+        display: block;
+    }
+
+    footer{
+        height: 700px;
+    }
+}
