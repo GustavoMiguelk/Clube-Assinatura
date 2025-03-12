@@ -1,5 +1,7 @@
 .img-msg{
     display: flex;
+
+    padding-inline: 2.5rem;
 }
 
 .img-msg img{
@@ -35,25 +37,21 @@
 }
 
 .msg-div:hover{
-    animation: appear 2s forwards;
+    animation: appear 3s forwards;
 
     & #book{
-        animation: appear 3s 1s forwards;
+        animation: appear-img 200ms 1s forwards;
     }
 
     & #crystal{
-        animation: appear 3s 3s forwards;
+        animation: appear-img 200ms 3s forwards;
         transform: rotate(-10deg);
     }
 
     & #planchete{
-        animation: appear 3s 2s forwards;
         transform: rotate(90deg);
+        animation: appear-img 200ms 2s forwards;
     }
-}
-
-& img:hover{
-    animation: img-rotate 2s both;
 }
 
 .msg div:nth-child(1){
@@ -70,6 +68,17 @@
     }
 
     100%{
+        opacity: 1;
+    }
+}
+
+@keyframes appear-img{
+    0%{
+        transform: scale(0.1);
+    }
+
+    100%{
+        transform: scale(1);
         opacity: 1;
     }
 }

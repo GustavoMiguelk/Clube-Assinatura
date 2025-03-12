@@ -1,0 +1,267 @@
+.book{
+    width: 100%;
+    height: 1500px;
+    margin: auto;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.book h2{
+    font-size: 2rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    margin-block: 10rem;
+
+    justify-content: center;
+}
+
+.book-castle{
+    background: url(../assets/images/book.png) no-repeat center/contain;
+    width: 100%;
+    height: 600px;
+    z-index: 5;
+    position: absolute;
+}
+
+.bookmark{
+    background: url(../assets/images/bookmark-purple.png) no-repeat center/contain;
+    width: 100%;
+    height: 550px;
+    transform: translateY(10px);
+
+    position: absolute;
+    z-index: 1;
+}
+
+.bookmark-snd{
+    background: url(../assets/images/bookmark-yellow.png) no-repeat center/contain;
+    width: 100%;
+    height: 550px;
+    transform: translateY(10px);
+
+    position: absolute;
+    z-index: 2;
+}
+
+.arrow-down{
+    background: url(../assets/icons/arrow-down.svg) no-repeat center/contain;
+    height: 200px;
+    width: 100%;
+
+    position: absolute;
+    transform: translateY(300px);
+    z-index: 3;
+}
+
+.arrow-down-text{
+    background: url(../assets/icons/arrow-down-text.svg) no-repeat center/contain;
+    height: 1rem;
+    width: 100%;
+
+    position: absolute;
+    transform: translateY(300px);
+    z-index: 3;
+}
+
+.brooch{
+    background: url(../assets/images/pin.png) no-repeat center/contain;
+    height: 250px;
+    width: 100%;
+
+    position: absolute;
+    transform: translateY(300px);
+    z-index: 4;
+}
+
+.brooch-arrow{
+    background: url(../assets/icons/arrow-brooch.svg) no-repeat center/contain;
+    height: 150px;
+    width: 100%;
+
+    position: absolute;
+    transform: translateY(300px);
+    z-index: 4;
+
+}
+
+.brooch-arrow-text{
+    background: url(../assets/icons/arrow-brooch-text.svg) no-repeat center/contain;
+    height: 1rem;
+    width: 100%;
+
+    position: absolute;
+    transform: translateY(300px);
+    z-index: 4;
+
+}
+
+.book-arrow{
+    background: url(../assets/icons/arrow-book.svg) no-repeat center/contain;
+    height: 2rem;
+    width: 100%;
+
+    position: absolute;
+    transform: translateY(20px);
+    z-index: 4;
+}
+
+.book-text{
+    background: url(../assets/icons/arrow-book-text.svg) no-repeat center/contain;
+    height: 1rem;
+    width: 100%;
+
+    position: absolute;
+    transform: translateY(20px);
+    z-index: 4;
+}
+
+.book-wrap:hover div.bookmark{
+    animation: first-move 500ms ease forwards alternate;
+}
+
+.book-wrap:hover div.bookmark-snd{
+    animation: snd-move 500ms ease forwards alternate;
+}
+
+.book-wrap:hover div.arrow-down{
+    animation: arrow-move-down 500ms ease forwards alternate;
+}
+
+.book-wrap:hover div.arrow-down-text{
+    animation: arrow-down-text 500ms ease forwards alternate;
+}
+
+.book-wrap:hover div.brooch{
+    animation: brooch 500ms ease forwards alternate;
+}
+
+.book-wrap:hover div.brooch-arrow{
+    animation: brooch-arrow 500ms ease forwards alternate;
+}
+
+.book-wrap:hover div.brooch-arrow-text{
+    animation: brooch-text 500ms ease forwards alternate;
+}
+
+.book-wrap:hover div.book-arrow{
+    animation: book-arrow 500ms ease forwards alternate;
+}
+
+.book-wrap:hover div.book-text{
+    animation: book-text 500ms ease forwards alternate;
+}
+
+
+@keyframes first-move{
+
+    from{
+        transform: translateY(10px);
+    }
+
+    to{
+        transform: translate(350px, 60px) rotate(25deg);
+    }
+
+}
+
+@keyframes snd-move{
+
+    from{
+        transform: translateY(10px);
+    }
+
+    to{
+        transform: translate(250px, -10px) rotate(10deg);
+    }
+
+}
+
+@keyframes arrow-move-down{
+
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translate(300px, 570px);
+    }
+
+}
+
+@keyframes arrow-down-text{
+
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translate(230px, 800px);
+    }
+
+}
+
+@keyframes brooch{
+
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translate(-240px, 450px) rotate(-10deg);
+    }
+
+}
+
+@keyframes brooch-arrow{
+
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translate(-390px, 350px) rotate(-10deg);
+    }
+
+}
+
+@keyframes brooch-text{
+
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translate(-390px, 300px);
+    }
+
+}
+
+@keyframes book-arrow{
+
+    from{
+        transform: translateY(200px);
+    }
+
+    to{
+        transform: translate(-300px, -30px) rotate(10deg);
+    }
+
+}
+
+@keyframes book-text{
+
+    from{
+        transform: translateY(200px);
+    }
+
+    to{
+        transform: translate(-350px, -90px);
+    }
+
+}
+
